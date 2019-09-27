@@ -29,7 +29,7 @@ var slideIndex = 1;
 
 currentDiv(slideIndex);
 
-function throttle(func,wait = 20, immediate=true){
+/*function throttle(func,wait = 20, immediate=true){
   var timeout;
   return function(){
     var context = this.args = arguments;
@@ -61,3 +61,5 @@ function checkPos(e){
   });
 }
 window.addEventListener('scroll',throttle(checkPos));
+*/
+AOS.init();
