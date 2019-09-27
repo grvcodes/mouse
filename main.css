@@ -13,6 +13,8 @@
 body{
     margin: 0;
     padding: 0;
+    width:100vw;
+    overflow:hidden;
 }
 .slides{
     display: none;
@@ -93,6 +95,7 @@ section div{
 section div img{
     height: 40vh;
     width: 40vh;
+     opacity:0.5;
     transition: all 500ms ease-in;
 }
 section div img.slide-right{
@@ -109,3 +112,11 @@ section div img.stack-up.visible{
     opacity: 1;
     transform: rotateX(0);
 }
+section div img.reveal{
+   transform: scale(0.5);
+}
+section div img.reveal.visible{
+    transform: scale(1);
+    opacity:1;
+}
+
