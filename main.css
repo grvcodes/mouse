@@ -8,6 +8,7 @@
 *{
     box-sizing: inherit;
     margin:inherit;
+     overflow:hidden;
 }
 body{
     margin: 0;
