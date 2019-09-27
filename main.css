@@ -92,6 +92,11 @@ section div{
     font-size: 0.8rem;
     perspective: 1000px;    
 }
+section div p h3{
+  color:#3f51b5;
+   font-size:1.2rem;
+   margin: 0.5em;
+}
 section div img{
     height: 40vh;
     width: 40vh;
