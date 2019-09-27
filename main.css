@@ -129,16 +129,23 @@ section div img.reveal.visible{
     transform: scale(1);
     opacity:1;
 }*/
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 750px) {
+::root{
+ font-size: 10px;
+}
   section div{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1rem;
+  grid-gap: .1rem;
   background: #f1f1f1;
-  margin-bottom: 2rem;
 }
 section div:nth-child(even) img {
   order: 2;
 }
+section div p{
+display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
 
+}
 }
