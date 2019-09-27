@@ -45,16 +45,15 @@ function throttle(func,wait = 20, immediate=true){
 };
 
 
-let moveIn = document.querySelectorAll(".moveIn img");
+let moveIn = document.querySelectorAll(".moveIn");
 function checkPos(e){
   
   moveIn.forEach(i => {
-    console.log(i.height,"Dfd",i.offsetTop);
-    const moveInAt = (window.scrollY + window.innerHeight)- (i.height/2);
+    const moveInAt = (window.scrollY + window.innerHeight);
+    const thresValue= i.offsetTop + (i.height)/2;
     const imageBottom = i.offsetTop + i.height;
-    const isHalfShown = moveInAt > i.offsetTop
+    const isHalfShown = moveInAt > thresValue
     const isNotScrollPast = window.scrollY < imageBottom;
-    console.log(imageBottom,"rrhj",moveInAt)
     if(isHalfShown && isNotScrollPast){
       i.classList.add("visible");
     }else{
