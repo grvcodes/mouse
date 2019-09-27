@@ -23,43 +23,6 @@ dots.forEach((i,k)=>{
   i.addEventListener('click',()=>currentDiv(k+1))
 });
 
-console.log(dots);
-
 var slideIndex = 1;
 
 currentDiv(slideIndex);
-
-/*function throttle(func,wait = 20, immediate=true){
-  var timeout;
-  return function(){
-    var context = this.args = arguments;
-    var later = function(){
-      timeout =null;
-      if(!immediate) func.apply(context,args);
-    };
-    var callNow = immediate && !timeout;
-    clearTimeout(timeout);
-    timeout = setTimeout(later,wait);
-    if(callNow)func.apply(context,args);
-  };
-};
-
-
-let moveIn = document.querySelectorAll(".moveIn");
-function checkPos(e){
-  
-  moveIn.forEach(i => {
-    const moveInAt = (window.scrollY + window.innerHeight)-(i.height)/2;
-    const imageBottom = i.offsetTop + i.height;
-    const isHalfShown = moveInAt > imageBottom;
-    const isNotScrollPast = window.scrollY < imageBottom;
-    if(isHalfShown && isNotScrollPast){
-      i.classList.add("visible");
-    }else{
-      i.classList.remove('visible');
-    }
-  });
-}
-window.addEventListener('scroll',throttle(checkPos));
-*/
-AOS.init();
