@@ -47,15 +47,15 @@ section>:nth-child(2n){
     background-color: whitesmoke;
 }
 section div{
-    height: 100vh;
+    /* min-height: 100vh; */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    font-size: 1.5rem;
+    font-size: 0.8rem;
 }
 section div img{
     height: 40vh;
     width: 40vh;
-    position: relative;
-    right: -150vw;
+    /* position: relative;
+    right: -150vw; */
 }
