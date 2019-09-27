@@ -56,9 +56,9 @@ function checkPos(e){
     const isNotScrollPast = window.scrollY < imageBottom;
     console.log(imageBottom,"rrhj",moveInAt)
     if(isHalfShown && isNotScrollPast){
-      i.img.classList.add("visible");
+      i.firstChild.classList.add("visible");
     }else{
-      i.img.classList.remove('visible');
+      i.firstChild.classList.remove('visible');
     }
   });
 }
