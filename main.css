@@ -90,7 +90,7 @@ section div{
     justify-content: space-around;
     font-size: 0.8rem;   
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 900px) {
   section div{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
