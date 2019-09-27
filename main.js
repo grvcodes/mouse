@@ -49,10 +49,9 @@ let moveIn = document.querySelectorAll(".moveIn");
 function checkPos(e){
   
   moveIn.forEach(i => {
-    const moveInAt = (window.scrollY + window.innerHeight);
-    const thresValue= i.offsetTop + (i.height)/2;
+    const moveInAt = (window.scrollY + window.innerHeight)-(i.height)/2;
     const imageBottom = i.offsetTop + i.height;
-    const isHalfShown = moveInAt > thresValue
+    const isHalfShown = moveInAt > imageBottom;
     const isNotScrollPast = window.scrollY < imageBottom;
     if(isHalfShown && isNotScrollPast){
       i.classList.add("visible");
