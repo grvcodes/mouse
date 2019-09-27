@@ -8,13 +8,13 @@
 *{
     box-sizing: inherit;
     margin:inherit;
-     overflow:hidden;
+     
 }
 body{
     margin: 0;
     padding: 0;
     width:100vw;
-    overflow:hidden;
+    overflow-x:hidden;
 }
 .slides{
     display: none;
@@ -32,7 +32,7 @@ span.hero_text{
 }
 div.hero{
     width: 100vw;
-min-height:100vh;
+    min-height:100vh;
     padding: .5em 1em;
     display: flex;
     flex-direction: column;
