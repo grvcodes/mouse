@@ -32,6 +32,7 @@ span.hero_text{
 }
 div.hero{
     width: 100vw;
+min-height:100vh;
     padding: .5em 1em;
     display: flex;
     flex-direction: column;
@@ -68,6 +69,10 @@ div.hero::after{
     border-radius: 5em;
     background:linear-gradient(to right,rgb(238, 83, 186) 20%,rgb(226, 85, 219) 40%,rebeccapurple 100%);
 }
+main>p{
+margin: .5em .8em;
+font-weight:300;
+ }
 div.hero div h1{
     margin: auto;
     font-size: 5vh; 
