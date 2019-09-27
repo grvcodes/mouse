@@ -37,6 +37,7 @@ div.hero{
     background-color: rgba(182, 233, 229, 0.251);
     color:#373737;
     text-align: center;
+    overflow:hidden;
 }
 div.hero *{
     position: relative;
