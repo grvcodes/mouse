@@ -85,25 +85,35 @@ section>:nth-child(2n){
     background-color: whitesmoke;
 }
 section div{
-    /* min-height: 100vh; */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    font-size: 0.8rem;
-    perspective: 1000px;    
+    font-size: 0.8rem;   
 }
+@media only screen and (min-width: 600px) {
+  section div{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  background: #f1f1f1;
+  margin-bottom: 2rem;
+}
+section div:nth-child(even) img {
+  order: 2;
+}
+
+}
+
 section div p h3{
-  color:#3f51b5;
+  color:#002b80;
    font-size:1.2rem;
    margin: 0.5em;
 }
 section div img{
     height: 40vh;
-    width: 40vh;
-     opacity:0.5;
-    transition: all 500ms ease-in;
+    width:40vh;
 }
-section div img.slide-right{
+/*section div img.slide-right{
     transform: translateX(-50%);
 }
 section div img.slide-right.visible{
@@ -122,6 +132,6 @@ section div img.reveal{
 }
 section div img.reveal.visible{
     transform: scale(1);
-    opacity:1;
+    opacity:1;*/
 }
 
