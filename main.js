@@ -45,7 +45,7 @@ function throttle(func,wait = 20, immediate=true){
 };
 
 
-let moveIn = document.querySelectorAll(".moveIn");
+let moveIn = document.querySelectorAll(".moveIn>img");
 function checkPos(e){
   
   moveIn.forEach(i => {
@@ -56,9 +56,9 @@ function checkPos(e){
     const isNotScrollPast = window.scrollY < imageBottom;
     console.log(imageBottom,"rrhj",moveInAt)
     if(isHalfShown && isNotScrollPast){
-      i.firstChild.classList.add("visible");
+      i.classList.add("visible");
     }else{
-      i.firstChild.classList.remove('visible');
+      i.classList.remove('visible');
     }
   });
 }
