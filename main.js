@@ -1,4 +1,4 @@
-/*let currentDiv= function(n){
+let currentDiv= function(n){
   var i;
   console.log(n);
   if (n > x.length) {slideIndex = 1}    
@@ -26,4 +26,3 @@ dots.forEach((i,k)=>{
 var slideIndex = 1;
 
 currentDiv(slideIndex);
-*/
