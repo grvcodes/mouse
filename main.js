@@ -45,7 +45,7 @@ function throttle(func,wait = 20, immediate=true){
 };
 
 
-let moveIn = document.querySelectorAll(".moveIn>img");
+let moveIn = document.querySelectorAll(".moveIn img");
 function checkPos(e){
   
   moveIn.forEach(i => {
