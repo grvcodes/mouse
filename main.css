@@ -134,9 +134,10 @@ section div img.reveal.visible{
  font-size: 10px;
 }
   section div{
-    width:60%;
+    width:60vw;
    flex-direction:row;
    justify-content:center;
+   align-items:center;
 }
 section div:nth-child(even) img {
   order: 2;
@@ -145,6 +146,7 @@ section div p{
 display: flex;
 flex-direction:column;
 justufy-content:center;
+align-items:center;
 
 }
 }
