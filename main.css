@@ -96,8 +96,15 @@ section div{
     flex-direction: column;
     justify-content: space-around;
     font-size: 0.8rem;   
-}
+}section div p{
+font-size:1.2rem;
+border-left:2px solid black;
+display: flex;
+flex-direction:column;
+justufy-content:center;
+align-items:center;
 
+}
 
 section div p h3{
   color:#002b80;
@@ -142,13 +149,5 @@ section div img.reveal.visible{
 section div:nth-child(even) img {
   order: 2;
 }
-section div p{
-font-size:1.2rem;
-border-left:2px solid black;
-display: flex;
-flex-direction:column;
-justufy-content:center;
-align-items:center;
 
-}
 }
