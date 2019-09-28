@@ -134,19 +134,16 @@ section div img.reveal.visible{
  font-size: 10px;
 }
   section div{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: .2rem;
-grid-auto-flow: column;
+   flex-direction:row;
+   justify-content:center;
 }
 section div:nth-child(even) img {
   order: 2;
 }
 section div p{
-display: grid;
-grid-auto-flow: row;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(2, 1fr);
+display: flex;
+flex-direction:column;
+justufy-content:stretch;
 
 }
 }
